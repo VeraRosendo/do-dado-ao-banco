@@ -17,6 +17,13 @@ TOPO = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{titulo} · Do Dado ao Banco</title>
 <meta name="description" content="{parte}, {numero}: {titulo}. Banco de dados para quem não sabe absolutamente nada.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Do Dado ao Banco">
+<meta property="og:title" content="{titulo} · Do Dado ao Banco">
+<meta property="og:description" content="{parte}, {numero}. Banco de dados para quem não sabe absolutamente nada.">
+<meta property="og:url" content="https://do-dado-ao-banco.vercel.app/{arquivo}">
+<meta property="og:image" content="https://do-dado-ao-banco.vercel.app/imagens/compartilhar.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="imagens/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
