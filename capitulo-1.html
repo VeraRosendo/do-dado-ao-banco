@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conheça o Dado · Do Dado ao Banco</title>
+<meta name="description" content="Parte 1 · Antes das tabelas, Capítulo 1: Conheça o Dado. Banco de dados para quem não sabe absolutamente nada.">
+<link rel="icon" href="imagens/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo"><nav>
+<a class="marca" href="index.html"><img src="imagens/favicon.png" alt="">Do Dado ao Banco</a>
+<span class="menu"><a href="index.html#caminho">Capítulos</a><a href="sobre.html">Sobre</a></span>
+</nav></header>
+<main>
+<span class="selo">Parte 1 · Antes das tabelas · Capítulo 1</span>
+<h1>Conheça o Dado</h1>
+<figure class="video">
+<video src="imagens/dado-abertura.mp4" poster="imagens/dado-abertura-capa.jpg" autoplay muted loop playsinline>
+</video>
+<figcaption>
+Afinal, Dado, você é 3, 4 ou 41?
+</figcaption>
+</figure>
+<h2 id="um-número-entra-pela-porta">Um número entra pela porta</h2>
+<p>O Dado chegou correndo, sem fôlego, e ergueu uma placa amarela: <strong>“4!”</strong></p>
+<p>Silêncio. Alguém arriscou: “4 o quê, Dado?” Ele olhou para a placa, olhou para a plateia, olhou para a placa de novo e encolheu os ombros. Nem ele sabia.</p>
+<p>E repare: o chapéu mostra 3, o bolso diz 4, e a placa, de tanto nervoso, já virou 41. Afinal, Dado, você é 3, 4 ou 41? Guarde essa dúvida, porque ela vira assunto sério no capítulo 3.</p>
+<p>É assim que esta apostila começa: com um número perdido, que ainda não quer dizer nada. Nas próximas páginas, o Dado vai descobrir como deixar de ser um número solto e virar algo útil. E você vai junto.</p>
+<h2 id="dado-sozinho-não-diz-nada">Dado sozinho não diz nada</h2>
+<p><strong>Dado</strong> é um registro bruto: um número, uma palavra, uma data, anotados sem explicação. <strong>Informação</strong> é o que se entende quando esse registro ganha contexto: de quê, de quem, quando, em que unidade.</p>
+<p>Veja o que acontece com o “4” do Dado quando alguém explica o que ele é:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>O dado</th>
+<th>O contexto</th>
+<th>A informação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>livros emprestados pela Ana</td>
+<td>A Ana está com 4 livros da biblioteca</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>dias de atraso na devolução</td>
+<td>O livro da Ana está 4 dias atrasado</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>reais de multa</td>
+<td>A Ana deve R$ 4,00 à biblioteca</td>
+</tr>
+</tbody>
+</table>
+<p>O mesmo “4” virou três informações diferentes. Quem decide o significado não é o número: é o contexto.</p>
+<h3 id="informação-serve-para-decidir">Informação serve para decidir</h3>
+<p>A informação existe para alguém fazer alguma coisa com ela. “O livro da Ana está 4 dias atrasado” leva a uma ação: mandar um lembrete para a Ana.</p>
+<p class="fluxo">
+<strong>dado</strong> (4) → <strong>informação</strong> (4 dias de atraso) → <strong>decisão</strong> (mandar o lembrete)
+</p>
+<h3 id="às-vezes-a-informação-nem-está-escrita">Às vezes a informação nem está escrita</h3>
+<p>Uma data de nascimento, como 15/03/1990, é um dado. Dela se tira uma informação que não está anotada em lugar nenhum: em novembro de 2026, essa pessoa tem 36 anos. A idade é deduzida, não escrita.</p>
+<p>Guardar a data, e não a idade, é uma esperteza que vamos reencontrar adiante: a data nunca muda; a idade muda todo ano.</p>
+<h2 id="boas-vindas-à-biblioteca-vira-página">Boas-vindas à Biblioteca Vira-Página</h2>
+<p>Antes de seguir, uma expressão que vai aparecer o tempo todo: <strong>banco de dados</strong>. Banco de dados é um lugar organizado para guardar informações e encontrá-las depressa, como um arquivo de fichas muito bem arrumado. Hoje ele costuma morar no computador, mas a ideia é a mesma do arquivo de papel.</p>
+<p>Para aprender banco de dados, vamos acompanhar um lugar só, do começo ao fim da apostila: a <strong>Biblioteca Comunitária Vira-Página</strong>, uma biblioteca pequena, de bairro, que empresta livros para os vizinhos.</p>
+<p>Hoje ela funciona com um caderno. Cada empréstimo é uma linha escrita à mão: o nome de quem levou, o título do livro, a data. Ao longo das quatro partes, esse caderno vai virar um banco de dados de verdade, funcionando no computador. Cada capítulo dá um passo.</p>
+<figure class="personagem direita">
+<img src="imagens/dona-integra.webp" alt="Dona Íntegra, com o carimbo erguido e o livro de regras" width="520" height="930">
+<figcaption>
+Dona Íntegra
+</figcaption>
+</figure>
+<p>Quem cuida da biblioteca é a <strong>Dona Íntegra</strong>. Ela é pequena, séria e anda com um livro de regras debaixo do braço. Ninguém mexe nas estantes sem passar por ela, e ela não aceita ficha mal preenchida. Mais adiante você vai descobrir que ela representa um programa de computador muito importante, mas isso fica para o capítulo 4.</p>
+<figure class="personagem esquerda">
+<img src="imagens/losangelo.webp" alt="Losângelo, de lápis em punho e coração na mão" width="520" height="930">
+<figcaption>
+Losângelo
+</figcaption>
+</figure>
+<p>E há o <strong>Losângelo</strong>, um sonhador que vive de lápis na mão. Para ele, nada deve ser construído antes de ser desenhado, e a maior alegria da vida é juntar as coisas: leitor com livro, livro com estante. Ele brilha na Parte 2.</p>
+<p>O Dado chegou à Vira-Página com o seu “4” e uma missão: entender como um número solto vira informação que ajuda alguém.</p>
+<div class="limpa">
+
+</div>
+<h2 id="para-colar-na-geladeira">Para colar na geladeira</h2>
+<div class="geladeira">
+<ul>
+<li><strong>Dado</strong> é o registro bruto: 4, “Rua das Acácias”, 15/03/1990.</li>
+<li><strong>Informação</strong> é o dado com contexto: o que é, de quem, em que unidade.</li>
+<li>O mesmo dado vira informações diferentes, conforme o contexto.</li>
+<li>Informação serve para decidir: dado → informação → decisão.</li>
+<li>Algumas informações são deduzidas, como a idade a partir da data de nascimento.</li>
+</ul>
+</div>
+<h2 id="pegadinhas">Pegadinhas</h2>
+<p><strong>1. “Frase comprida é informação.”</strong> Não necessariamente. “Rua das Acácias, 120, apartamento 302” é longa e continua sendo dado: um endereço solto, de ninguém. O teste não é o tamanho, é a pergunta: <em>dá para entender o que isso significa e fazer algo com isso?</em></p>
+<p><strong>2. “Número é dado, palavra é informação.”</strong> Também não. Um nome sozinho (“Ana”) é dado. Um número com contexto (“a Ana deve R$ 4,00”) é informação. O formato não importa; importa o contexto.</p>
+<p><strong>3. “Melhor guardar a idade, que é mais útil.”</strong> Armadilha! A idade fica errada no ano seguinte, sem ninguém perceber. Guarde o dado que não muda (a data de nascimento) e deduza a informação (a idade) quando precisar.</p>
+<h2 id="exercícios">Exercícios</h2>
+<p>Os exercícios vão do mais guiado ao mais livre: primeiro um exemplo resolvido, depois um meio resolvido, depois os seus. Tente sozinho antes de abrir o gabarito.</p>
+<h3 id="exemplo-resolvido">Exemplo resolvido</h3>
+<ul>
+<li><strong>Dado:</strong> 37,8</li>
+<li><strong>Contexto:</strong> temperatura da Joana, medida às 8h, em graus Celsius.</li>
+<li><strong>Informação:</strong> a Joana está com febre.</li>
+<li><strong>Decisão:</strong> a Joana fica em casa e vai ao posto de saúde.</li>
+</ul>
+<p>Repare: sozinho, “37,8” poderia ser um preço, um peso ou uma distância. Foi o contexto que fez dele uma febre.</p>
+<h3 id="meio-resolvido-complete">Meio resolvido (complete)</h3>
+<ul>
+<li><strong>Dado:</strong> 12/12</li>
+<li><strong>Contexto:</strong> data em que o Caio precisa devolver o livro que pegou na Vira-Página.</li>
+<li><strong>Informação:</strong> ____________________</li>
+<li><strong>Decisão, se hoje for 15/12:</strong> ____________________</li>
+</ul>
+<h3 id="agora-é-com-você">Agora é com você</h3>
+<p><strong>Exercício 1.</strong> Para cada dado abaixo, invente <strong>dois contextos diferentes</strong> que gerem informações diferentes, como fizemos com o “4”.</p>
+<ul>
+<li><ol type="a">
+<li>R$ 2,00</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>250</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Sim</li>
+</ol></li>
+</ul>
+<p><strong>Exercício 2.</strong> Classifique cada item como <strong>dado</strong> ou <strong>informação</strong>.</p>
+<ul>
+<li><ol type="a">
+<li>1,72</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>A conta de luz deste mês veio 30% mais alta que a do mês passado.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Rua das Acácias</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>O ônibus da linha 507 está 10 minutos atrasado.</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>7</li>
+</ol></li>
+<li><ol start="6" type="a">
+<li>A Vira-Página tem 3 livros com devolução vencida hoje.</li>
+</ol></li>
+</ul>
+<p><strong>Exercício 3.</strong> O Dado quer guardar, na ficha de cada leitor da Vira-Página, a idade da pessoa. A Dona Íntegra cruzou os braços. O que ela vai sugerir no lugar, e por quê?</p>
+<h2 id="gabarito-comentado">Gabarito comentado</h2>
+<details class="gabarito">
+<summary>
+Já tentei. Mostrar o gabarito
+</summary>
+<p><strong>Meio resolvido.</strong> Informação: o Caio tem até 12 de dezembro para devolver o livro. Decisão: se hoje é 15/12, o livro está 3 dias atrasado, e a biblioteca manda um lembrete ao Caio. Repare que “3 dias de atraso” não estava escrito em lugar nenhum: foi deduzido comparando duas datas.</p>
+<p><strong>Exercício 1.</strong> Há muitas respostas certas; estas são só exemplos.</p>
+<ul>
+<li><ol type="a">
+<li>R$ 2,00: “preço do pão de queijo na cantina” ou “multa por dia de atraso na biblioteca”.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>250: “páginas do livro” ou “gramas de farinha da receita”.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Sim: “a Ana aceitou receber avisos pelo celular” ou “o livro está disponível para empréstimo”.</li>
+</ol></li>
+</ul>
+<p>Se os seus dois contextos geram duas informações diferentes, você entendeu o capítulo.</p>
+<p><strong>Exercício 2.</strong></p>
+<ul>
+<li><ol type="a">
+<li><strong>Dado.</strong> 1,72 pode ser altura, preço ou distância.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li><strong>Informação.</strong> Diz o que é, de quando, e ainda compara com o mês anterior.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li><strong>Dado.</strong> Uma rua solta: de quem? para quê?</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li><strong>Informação.</strong> Diz qual ônibus e quanto atraso, e ajuda a decidir: esperar ou ir a pé.</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li><strong>Dado.</strong> Um número puro.</li>
+</ol></li>
+<li><ol start="6" type="a">
+<li><strong>Informação.</strong> Diz o quê, onde e quando, e pede uma ação: cobrar as devoluções.</li>
+</ol></li>
+</ul>
+<p><strong>Exercício 3.</strong> A Dona Íntegra vai pedir a <strong>data de nascimento</strong>. A idade muda todo ano, e a ficha ficaria errada sem ninguém perceber. A data nunca muda, e dela se calcula a idade sempre que for preciso. É a pegadinha 3 em ação.</p>
+</details>
+
+<nav class="navegacao"><a href="index.html#caminho">← Todos os capítulos</a><span class="embreve">Próximo: Do caderno à planilha</span></nav>
+</main>
+<footer class="rodape">
+<p>Do Dado ao Banco, criado por Vera Lúcia Rosendo em parceria com Claude (Anthropic).</p>
+<p>Livre para copiar, adaptar e compartilhar, citando a autoria, sob a licença <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC BY-SA 4.0</a>.</p>
+</footer>
+</body>
+</html>
