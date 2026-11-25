@@ -152,3 +152,13 @@ Se os seus dois contextos geram duas informações diferentes, você entendeu o 
 **Exercício 3.** A Dona Íntegra vai pedir a **data de nascimento**. A idade muda todo ano, e a ficha ficaria errada sem ninguém perceber. A data nunca muda, e dela se calcula a idade sempre que for preciso. É a pegadinha 3 em ação.
 
 </details>
+
+## Para saber mais
+
+As ideias deste capítulo seguem as fontes abaixo. Quase todas são gratuitas e podem ser lidas na internet.
+
+- **SETZER, Valdemar W.** Dado, informação, conhecimento e competência. *DataGramaZero: Revista de Ciência da Informação*, n. zero, dez. 1999. Professor de Ciência da Computação da USP, Setzer explica como o dado, que sozinho não tem significado, vira informação quando alguém lhe dá sentido. [Ler o artigo](https://cip.brapci.inf.br/download/45629).
+- **ELMASRI, Ramez; NAVATHE, Shamkant B.** *Sistemas de banco de dados*. 6. ed. São Paulo: Pearson Addison Wesley, 2011. Um dos livros mais usados no ensino da área. Define **dados** como fatos conhecidos que podem ser registrados e que têm significado implícito, e **banco de dados** como uma coleção de dados relacionados. [Ver a aula da USP baseada nesse livro](https://edisciplinas.usp.br/pluginfile.php/5635023/mod_resource/content/1/Aula%201%20-%20Introdu%C3%A7%C3%A3o%20aos%20Sistemas%20de%20Bancos%20de%20Dados.pdf).
+- **ESCOLA NACIONAL DE ADMINISTRAÇÃO PÚBLICA (Enap).** *Introdução à Gestão de Dados*, módulo 1. Brasília: Enap. Material gratuito do governo federal sobre a escada dado, informação, conhecimento e sabedoria. [Abrir o material](https://bibliotecadigital.enap.gov.br/bitstream/1/7686/3/M%c3%b3dulo%201%20-%20Introdu%c3%a7%c3%a3o%20%c3%a0%20Gest%c3%a3o%20de%20Dados.pdf).
+
+**Curiosidade:** não existe uma definição única. Um levantamento com especialistas, citado em artigo da revista *Informação & Informação*, da Universidade Estadual de Londrina, reuniu 130 definições diferentes de dado, informação e conhecimento ([ler o artigo](https://ojs.uel.br/revistas/uel/index.php/informacao/article/download/35949/pdf_1/201021)). Por isso, esta apostila fica com a versão mais simples e prática: dado é o registro; informação é o registro com sentido.
